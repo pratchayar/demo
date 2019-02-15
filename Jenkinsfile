@@ -9,8 +9,8 @@ pipeline {
        stage('Build') {
          agent {label 'mgr1'}
           steps {
-              sh "git clone https://github.com/pratchayar/demo"
-              sh "cd demo"
+              //sh "git clone https://github.com/pratchayar/demo"
+              //sh "cd demo"
               sh "docker --version"
               sh "docker build -t ${env.imageName} ."
           }
