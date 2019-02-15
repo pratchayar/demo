@@ -7,7 +7,7 @@ pipeline {
 
     stages {
        stage('Build') {
-         agent {label 'mgr1'}
+         agent any
           steps {
               //sh "git clone https://github.com/pratchayar/demo"
               //sh "cd demo"
